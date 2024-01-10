@@ -1,4 +1,3 @@
-/// @description Movement
 #macro ACCEL 0.2
 #macro ACCEL_LIMIT 10
 
@@ -8,46 +7,46 @@ var _left = keyboard_check(ord("A"))
 var _right = keyboard_check(ord("D"))
 
 if (_up) {
-	accel_y -= ACCEL
-} else if (accel_y < 0) {
-	accel_y += ACCEL
+	v_y -= ACCEL
+} else if (v_y < 0) {
+	v_y += ACCEL
 }
 
 if (_down) {
-	accel_y += ACCEL
-} else if (accel_y > 0) {
-	accel_y -= ACCEL
+	v_y += ACCEL
+} else if (v_y > 0) {
+	v_y -= ACCEL
 }
 
 if (_left) {
-	accel_x -= ACCEL
-} else if (accel_x < 0) {
-	accel_x += ACCEL
+	v_x -= ACCEL
+} else if (v_x < 0) {
+	v_x += ACCEL
 }
 
 if (_right) {
-	accel_x += ACCEL
-} else if (accel_x > 0) {
-	accel_x -= ACCEL
+	v_x += ACCEL
+} else if (v_x > 0) {
+	v_x -= ACCEL
 }
 
 // LIMITS
-if (accel_y > ACCEL_LIMIT) {
-	accel_y = ACCEL_LIMIT
+if (v_y > ACCEL_LIMIT) {
+	v_y = ACCEL_LIMIT
 }
-if (accel_y < -ACCEL_LIMIT) {
-	accel_y = -ACCEL_LIMIT
+if (v_y < -ACCEL_LIMIT) {
+	v_y = -ACCEL_LIMIT
 }
-if (accel_x > ACCEL_LIMIT) {
-	accel_x = ACCEL_LIMIT
+if (v_x > ACCEL_LIMIT) {
+	v_x = ACCEL_LIMIT
 }
-if (accel_x < -ACCEL_LIMIT) {
-	accel_x = -ACCEL_LIMIT
+if (v_x < -ACCEL_LIMIT) {
+	v_x = -ACCEL_LIMIT
 }
 
 // Actual move
-x += accel_x
-y += accel_y
+x += v_x
+y += v_y
 
 // bounds
 if (x < 0) {
