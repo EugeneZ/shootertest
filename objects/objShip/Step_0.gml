@@ -5,6 +5,7 @@ var _up = keyboard_check(ord("W"))
 var _down = keyboard_check(ord("S"))
 var _left = keyboard_check(ord("A"))
 var _right = keyboard_check(ord("D"))
+var _space = keyboard_check(ord(" "))
 
 if (_up) {
 	v_y -= ACCEL
@@ -60,4 +61,18 @@ if (y < 0) {
 }
 if (y + sprite_height > room_height) {
 	y = room_height - sprite_height
+}
+
+// SHOOT
+#macro SHOT_INTERVAL 0.25
+since_last_shot += delta_time / 1000000
+
+if (_space && since_last_shot > SHOT_INTERVAL) {
+	since_last_shot = 0
+	instance_create_layer(
+		x + (sprite_width/2),
+		y,
+		"Instances",
+		objBullet,
+	)
 }

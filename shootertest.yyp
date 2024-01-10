@@ -38,6 +38,8 @@
     {"id":{"name":"objBogey","path":"objects/objBogey/objBogey.yy",},},
     {"id":{"name":"sprShip","path":"sprites/sprShip/sprShip.yy",},},
     {"id":{"name":"sprBogey","path":"sprites/sprBogey/sprBogey.yy",},},
+    {"id":{"name":"sprBullet","path":"sprites/sprBullet/sprBullet.yy",},},
+    {"id":{"name":"objBullet","path":"objects/objBullet/objBullet.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [

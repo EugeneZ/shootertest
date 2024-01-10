@@ -19,5 +19,7 @@
   "ResourceOrderSettings": [
     {"name":"objBogey","order":1,"path":"objects/objBogey/objBogey.yy",},
     {"name":"sprBogey","order":1,"path":"sprites/sprBogey/sprBogey.yy",},
+    {"name":"sprBullet","order":2,"path":"sprites/sprBullet/sprBullet.yy",},
+    {"name":"objBullet","order":2,"path":"objects/objBullet/objBullet.yy",},
   ],
 }
