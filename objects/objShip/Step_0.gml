@@ -1,5 +1,6 @@
-#macro ACCEL 0.2
-#macro ACCEL_LIMIT 10
+#macro ACCEL 0.25
+#macro ACCEL_LIMIT 15
+#macro DECEL 0.4
 
 var _up = keyboard_check(ord("W"))
 var _down = keyboard_check(ord("S"))
@@ -10,25 +11,25 @@ var _space = keyboard_check(ord(" "))
 if (_up) {
 	v_y -= ACCEL
 } else if (v_y < 0) {
-	v_y += ACCEL
+	v_y = min(v_y + DECEL, 0)
 }
 
 if (_down) {
 	v_y += ACCEL
 } else if (v_y > 0) {
-	v_y -= ACCEL
+	v_y = max(v_y - DECEL, 0)
 }
 
 if (_left) {
 	v_x -= ACCEL
 } else if (v_x < 0) {
-	v_x += ACCEL
+	v_x = min(v_x + DECEL, 0)
 }
 
 if (_right) {
 	v_x += ACCEL
 } else if (v_x > 0) {
-	v_x -= ACCEL
+	v_x = max(v_x - DECEL, 0)
 }
 
 // LIMITS
