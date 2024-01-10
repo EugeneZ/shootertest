@@ -36,10 +36,13 @@
   "resources": [
     {"id":{"name":"objShip","path":"objects/objShip/objShip.yy",},},
     {"id":{"name":"objBogey","path":"objects/objBogey/objBogey.yy",},},
+    {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
+    {"id":{"name":"objMoneyDisplay","path":"objects/objMoneyDisplay/objMoneyDisplay.yy",},},
     {"id":{"name":"sprShip","path":"sprites/sprShip/sprShip.yy",},},
     {"id":{"name":"sprBogey","path":"sprites/sprBogey/sprBogey.yy",},},
     {"id":{"name":"sprBullet","path":"sprites/sprBullet/sprBullet.yy",},},
     {"id":{"name":"objBullet","path":"objects/objBullet/objBullet.yy",},},
+    {"id":{"name":"objHealthDisplay","path":"objects/objHealthDisplay/objHealthDisplay.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [
