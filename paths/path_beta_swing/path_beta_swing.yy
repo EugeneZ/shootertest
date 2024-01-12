@@ -1,0 +1,19 @@
+{
+  "resourceType": "GMPath",
+  "resourceVersion": "1.0",
+  "name": "path_beta_swing",
+  "closed": false,
+  "kind": 1,
+  "parent": {
+    "name": "Paths",
+    "path": "folders/Paths.yy",
+  },
+  "points": [
+    {"speed":100.0,"x":0.0,"y":1.0,},
+    {"speed":100.0,"x":256.0,"y":163.0,},
+    {"speed":100.0,"x":-237.5,"y":251.0,},
+    {"speed":100.0,"x":-38.5,"y":367.0,},
+    {"speed":100.0,"x":-217.5,"y":501.0,},
+  ],
+  "precision": 4,
+}

@@ -78,4 +78,5 @@ if (_space && since_last_shot > SHOT_INTERVAL) {
 	)
 	
 	_bullet.v = -20
+	_bullet.friendly = true
 }

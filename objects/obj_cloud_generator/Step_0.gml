@@ -29,8 +29,8 @@ time_since_last_cluster = 0
 
 var _n = irandom_range(min_clouds,max_clouds)
 for (var _i = 0; _i < _n; _i++) {
-	var _x = irandom(room_width - spr_cloud1.sprite_width)
-	var _y = 0 - y_spread - irandom(y_spread) - spr_cloud1.sprite_height
+	var _x = irandom(room_width - sprite_get_width(spr_cloud1))
+	var _y = 0 - y_spread - irandom(y_spread) - sprite_get_height(spr_cloud1)
 	var _cloud = instance_create_layer(_x, _y, "Clouds", obj_cloud)
 	_cloud.v_y = random_range(v_y_min, v_y_min + v_y_spread)
 	_cloud.v_x = random_range(v_x_min, v_x_min + v_x_spread)

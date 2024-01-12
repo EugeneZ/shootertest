@@ -1,4 +1,8 @@
 /// @description Take damage
+if (!other.friendly) {
+	return
+}
+
 life -= 1
 
 instance_destroy(other)

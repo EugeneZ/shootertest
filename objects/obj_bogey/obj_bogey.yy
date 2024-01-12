@@ -31,7 +31,10 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"life","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"3","varType":1,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"timeline","filters":[
         "GMTimeline",
-      ],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":5,},
+      ],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"noone","varType":5,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"path","filters":[
+        "GMPath",
+      ],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"noone","varType":5,},
   ],
   "solid": false,
   "spriteId": null,
