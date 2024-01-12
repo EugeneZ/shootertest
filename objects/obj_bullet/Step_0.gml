@@ -1,2 +1,1 @@
-#macro BULLET_SPEED 20
-y -= BULLET_SPEED
+y += v

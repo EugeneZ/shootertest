@@ -70,10 +70,12 @@ since_last_shot += delta_time / 1000000
 
 if (_space && since_last_shot > SHOT_INTERVAL) {
 	since_last_shot = 0
-	instance_create_layer(
+	var _bullet = instance_create_layer(
 		x + (sprite_width/2),
 		y,
 		"Instances",
-		obj_bullet,
+		obj_bullet
 	)
+	
+	_bullet.v = -20
 }
