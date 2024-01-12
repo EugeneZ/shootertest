@@ -74,6 +74,6 @@ if (_space && since_last_shot > SHOT_INTERVAL) {
 		x + (sprite_width/2),
 		y,
 		"Instances",
-		objBullet,
+		obj_bullet,
 	)
 }

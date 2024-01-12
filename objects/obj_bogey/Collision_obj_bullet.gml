@@ -5,5 +5,5 @@ instance_destroy(other)
 
 if (healthh == 0) {
 	instance_destroy()
-	objMoneyDisplay.money += 100
+	obj_money_display.money += 100
 }
