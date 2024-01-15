@@ -1,0 +1,2 @@
+function RemainStill() constructor {
+}
