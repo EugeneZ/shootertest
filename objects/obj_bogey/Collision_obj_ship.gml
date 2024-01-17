@@ -1,3 +1,3 @@
 /// @description Die
 instance_destroy()
-obj_money_display.money += 100
+obj_money.money += 100
