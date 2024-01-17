@@ -1,4 +1,4 @@
-if (life <= 0 && !game_over) {
+if (global.p_health <= 0 && !game_over) {
 	instance_destroy(obj_ship)
 	game_over = true
 }

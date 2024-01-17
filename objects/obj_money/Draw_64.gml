@@ -1,4 +1,4 @@
-var _text = "$" + string_format(money, 10,0)
+var _text = "$" + string_format(global.p_money, 10,0)
 
 var _w = 130
 var _h = 40

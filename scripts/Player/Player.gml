@@ -29,5 +29,5 @@ function player_dimensions(){
 }
 
 function hit_player() {
-	obj_health.life -= 1
+	global.p_health -= 1
 }
