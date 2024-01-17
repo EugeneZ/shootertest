@@ -39,6 +39,7 @@
     {"name":"spr_cloud3","order":2,"path":"sprites/spr_cloud3/spr_cloud3.yy",},
     {"name":"obj_cloud","order":7,"path":"objects/obj_cloud/obj_cloud.yy",},
     {"name":"spr_charlie","order":8,"path":"sprites/spr_charlie/spr_charlie.yy",},
+    {"name":"obj_enemy_bullet","order":10,"path":"objects/obj_enemy_bullet/obj_enemy_bullet.yy",},
     {"name":"obj_health_display","order":4,"path":"objects/obj_health_display/obj_health_display.yy",},
     {"name":"Globals","order":1,"path":"scripts/Globals/Globals.yy",},
   ],
