@@ -27,3 +27,7 @@ function player_dimensions(){
 		}
 	}
 }
+
+function hit_player() {
+	obj_health_display.life -= 1
+}
