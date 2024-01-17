@@ -8,11 +8,12 @@ shoot = function() {
 // By default, just move down
 movement_destination = new Vector2(x, room_height)
 move_near_player = function(_distance) {
-	var _player_x = obj_ship.x + (obj_ship.sprite_width / 2)
-	var _player_y = obj_ship.y // using upper y since enemies come from above
+	var _player   =  player_dimensions()
+	var _player_x = _player.center.x
+	var _player_y = _player.y
 	
 	var _random_x = irandom_range(
-		max(_player_x - _distance,0),
+		max(_player_x - _distance, 0),
 		min(_player_x + _distance, room_width - self.sprite_width)
 	)
 	

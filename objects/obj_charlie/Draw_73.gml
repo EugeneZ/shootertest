@@ -1,8 +1,9 @@
 var _center_x = x + (sprite_width / 2)
 var _center_y = y + (sprite_height / 2)
 
-var _player_x = obj_ship.x + (obj_ship.sprite_width / 2)
-var _player_y = obj_ship.y + (obj_ship.sprite_height / 2)
+var _player = player_dimensions()
+var _player_x = _player.x
+var _player_y = _player.y
 
 var _range = 7
 var _direction = point_direction(_center_x, _center_y, _player_x, _player_y)
