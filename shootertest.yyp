@@ -41,6 +41,7 @@
     {"id":{"name":"timeline_wave_1","path":"timelines/timeline_wave_1/timeline_wave_1.yy",},},
     {"id":{"name":"obj_ship","path":"objects/obj_ship/obj_ship.yy",},},
     {"id":{"name":"spr_cloud2","path":"sprites/spr_cloud2/spr_cloud2.yy",},},
+    {"id":{"name":"spr_Water","path":"sprites/spr_Water/spr_Water.yy",},},
     {"id":{"name":"obj_cloud_generator","path":"objects/obj_cloud_generator/obj_cloud_generator.yy",},},
     {"id":{"name":"obj_bogey","path":"objects/obj_bogey/obj_bogey.yy",},},
     {"id":{"name":"spr_cloud1","path":"sprites/spr_cloud1/spr_cloud1.yy",},},
