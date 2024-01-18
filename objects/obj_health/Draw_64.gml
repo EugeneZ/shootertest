@@ -2,7 +2,7 @@ var _heart_w = sprite_get_width(spr_health)
 var _padding_x = -(_heart_w + _heart_w)
 var _padding_y = 0
 
-for (var i = 0; i < life; i++) {
+for (var i = 0; i < global.p_health; i++) {
 	draw_sprite(spr_health, 0, x + (i * _padding_x), y + (i * _padding_y))
 }
 

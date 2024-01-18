@@ -1,6 +1,4 @@
-var _bullet = instance_create_layer(x + (sprite_width/2), y+sprite_height, "Instances", obj_bullet)
-
-_bullet.v = 10
+var _bullet = instance_create_layer(x + (sprite_width/2), y+sprite_height, "Instances", obj_enemy_bullet)
 
 // TODO consider doing these calculations once per step
 var _my_x = x + (sprite_width / 2) 
