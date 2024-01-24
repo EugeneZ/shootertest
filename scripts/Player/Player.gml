@@ -30,4 +30,5 @@ function player_dimensions(){
 
 function hit_player() {
 	global.p_health -= 1
+	audio_play_sound(snd_hit,1,0,1.5,0,3)
 }
