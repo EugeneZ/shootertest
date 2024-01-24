@@ -50,6 +50,7 @@
     {"id":{"name":"store","path":"rooms/store/store.yy",},},
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
     {"id":{"name":"timeline_bogey_charlie","path":"timelines/timeline_bogey_charlie/timeline_bogey_charlie.yy",},},
+    {"id":{"name":"snd_shoot","path":"sounds/snd_shoot/snd_shoot.yy",},},
     {"id":{"name":"obj_money","path":"objects/obj_money/obj_money.yy",},},
     {"id":{"name":"spr_charlie_eye","path":"sprites/spr_charlie_eye/spr_charlie_eye.yy",},},
     {"id":{"name":"spr_ship","path":"sprites/spr_ship/spr_ship.yy",},},

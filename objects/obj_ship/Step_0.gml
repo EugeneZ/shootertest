@@ -76,4 +76,5 @@ if (_space && since_last_shot > SHOT_INTERVAL) {
 		"Instances",
 		obj_bullet
 	)
+	audio_play_sound(snd_shoot, 0, false, 1, 0, random_range(1,1.1))
 }
