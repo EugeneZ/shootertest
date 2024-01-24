@@ -1,8 +1,10 @@
+steps_since_created++
+
 var _up = keyboard_check_pressed(ord("W"))
 var _down = keyboard_check_pressed(ord("S"))
 var _left = keyboard_check_pressed(ord("A"))
 var _right = keyboard_check_pressed(ord("D"))
-var _space = keyboard_check_released(ord(" "))
+var _space = keyboard_check_released(ord(" ")) && steps_since_created > 60
 
 if (_down) {
 	cursor = "bottom"

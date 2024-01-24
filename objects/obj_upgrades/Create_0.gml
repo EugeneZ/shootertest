@@ -52,3 +52,4 @@ three_random_upgrades = [
 ]
 
 cursor = "center"
+steps_since_created = 0
