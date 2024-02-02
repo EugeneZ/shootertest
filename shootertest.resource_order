@@ -32,6 +32,7 @@
     {"name":"obj_alpha","order":1,"path":"objects/obj_alpha/obj_alpha.yy",},
     {"name":"spr_gun_upgrade","order":1,"path":"sprites/spr_gun_upgrade/spr_gun_upgrade.yy",},
     {"name":"store","order":1,"path":"rooms/store/store.yy",},
+    {"name":"snd_soundtrack1","order":3,"path":"sounds/snd_soundtrack1/snd_soundtrack1.yy",},
     {"name":"spr_heal","order":4,"path":"sprites/spr_heal/spr_heal.yy",},
     {"name":"timeline_bogey_charlie","order":3,"path":"timelines/timeline_bogey_charlie/timeline_bogey_charlie.yy",},
     {"name":"obj_money","order":3,"path":"objects/obj_money/obj_money.yy",},
