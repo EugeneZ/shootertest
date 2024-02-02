@@ -1,3 +1,6 @@
+// scale health - +1 at lvl3,5,7,etc
+life += floor((global.wave - 1) / 2)
+
 shoot = function() {
 	if (life <= 0) {
 		return

@@ -97,7 +97,7 @@ if (_space && since_last_shot > _shot_interval) {
 		)
 	}
 	
-	if (global.p_gun_lvl == 3) {
+	if (global.p_gun_lvl >= 3) {
 		instance_create_layer(
 			x + (sprite_width/2),
 			y,
@@ -112,7 +112,7 @@ if (_space && since_last_shot > _shot_interval) {
 			obj_bullet
 		)
 		
-		_b1.move_direction = 70
+		_b1.move_direction = 60
 		
 		var _b2 = instance_create_layer(
 			x + sprite_width - 5,
@@ -121,7 +121,7 @@ if (_space && since_last_shot > _shot_interval) {
 			obj_bullet
 		)
 		
-		_b2.move_direction = 110
+		_b2.move_direction = 120
 	}
 	
 }

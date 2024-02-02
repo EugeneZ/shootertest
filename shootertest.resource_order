@@ -51,6 +51,7 @@
     {"name":"obj_cloud","order":7,"path":"objects/obj_cloud/obj_cloud.yy",},
     {"name":"snd_hit","order":1,"path":"sounds/snd_hit/snd_hit.yy",},
     {"name":"spr_charlie","order":8,"path":"sprites/spr_charlie/spr_charlie.yy",},
+    {"name":"obj_debug","order":13,"path":"objects/obj_debug/obj_debug.yy",},
     {"name":"obj_enemy_bullet","order":10,"path":"objects/obj_enemy_bullet/obj_enemy_bullet.yy",},
     {"name":"obj_health","order":4,"path":"objects/obj_health/obj_health.yy",},
     {"name":"Globals","order":1,"path":"scripts/Globals/Globals.yy",},

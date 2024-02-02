@@ -1,35 +1,45 @@
 var _upgrades = [ 
 	{ 
 		sprite: spr_better_money, 
-		description: "Earn more per kill", 
-		onBuy: function() { 
-			global.p_money_lvl++ 
-		}, 
+		name: "Scrap Refining",
+		description: "Earn more money per kill",
+		cost: 1,
+		onBuy: function() {
+			global.p_money_lvl++
+		},
 	}, 
 	{ 
 		sprite: spr_fire_rate, 
-		description: "Guns shoot faster", 
+		name: "Barrel Cooling",
+		description: "Guns shoot bullets faster",
+		cost: 1.1,
 		onBuy: function() { 
 			global.p_fire_rate_lvl++ 
 		}, 
 	}, 
 	{ 
-		sprite: spr_gun_upgrade, 
-		description: "Improved guns", 
+		sprite: spr_gun_upgrade,
+		name: "Additional Gun",
+		description: "You fire an additional bullet", 
+		cost: 3,
 		onBuy: function() { 
 			global.p_gun_lvl++ 
 		}, 
 	}, 
 	{ 
 		sprite: spr_heal, 
+		name: "Repair",
 		description: "Gain health", 
+		cost: 0.75,
 		onBuy: function() { 
 			global.p_health++ 
 		}, 
 	}, 
 	{ 
-		sprite: spr_thrust_upgrade, 
+		sprite: spr_thrust_upgrade,
+		name: "Thruster Upgrade",
 		description: "Better ship control", 
+		cost: 1,
 		onBuy: function() { 
 			global.p_thurst_lvl++ 
 		}, 
