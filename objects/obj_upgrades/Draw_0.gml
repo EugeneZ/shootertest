@@ -14,17 +14,6 @@ if (cursor == "right") {
 	_selected_upgrade = three_random_upgrades[2]
 }
 
-// Selection text
-if (_selected_upgrade) {
-	draw_set_halign(fa_center)
-	draw_text_color(
-		room_width / 2,
-		room_height - 300,
-		_selected_upgrade.description,
-		c_orange, c_orange, c_yellow, c_yellow,1
-	)
-}
-
 // upgrade sprites
 var _upgrade_p = 10
 var _upgrade_b = 10
@@ -62,13 +51,45 @@ for (var i = 0; i < _upgrade_count ; i++) {
 	
 	// Actual sprite
 	draw_sprite_ext(_sprite,0, _x1, _y1, _scale, _scale, 0, c_white, 1)
+	
+	// Cost + Name + Description
+	var _cost = upgrade_cost(_upgrade)
+	draw_set_color(c_black)
+	draw_rectangle(_x1, _y2 + 50, _x2, _y2 + 200, false)
+	
+	if (global.p_money >= _cost) {
+		draw_set_color(c_green)
+	} else {
+		draw_set_color(c_red)
+	}
+	
+	draw_set_halign(fa_left)
+	draw_text(
+		_x1 +_upgrade_p,
+		_y2 + 50 + _upgrade_p,
+		"$" + string(_cost)
+	)
+	draw_text_color(
+		_x1 +_upgrade_p,
+		_y2 + 50 + _upgrade_p + 20,
+		_upgrade.name,
+		c_orange, c_orange, c_yellow, c_yellow,1
+	)
+	draw_set_color(c_white)
+	draw_text_ext(
+		_x1 +_upgrade_p,
+		_y2 + 50 + _upgrade_p + 40,
+		_upgrade.description,
+		3,
+		_x2 - _x1 - 5
+	)
 }
 
 // Go button
 var _btn_x1 = (room_width / 2) - 200
 var _btn_x2 = (room_width / 2) + 200
-var _btn_y1 = room_height - 200
-var _btn_y2 = room_height - 100
+var _btn_y1 = room_height - 120
+var _btn_y2 = room_height -  20
 
 if (cursor == "bottom") {
 	draw_rectangle_color(

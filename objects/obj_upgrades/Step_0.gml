@@ -36,25 +36,21 @@ if (_space && cursor == "bottom") {
 	return
 }
 
-if (_space && cursor != "bottom") {
-	var _price = 300 + (global.wave * 200)
-	if (_price <= global.p_money) {
-		
-		
-		var _selected_upgrade = noone
-		if (cursor == "left") {
-			_selected_upgrade = three_random_upgrades[0]
-		}
-		if (cursor == "center") {
-			_selected_upgrade = three_random_upgrades[1]
-		}
-		if (cursor == "right") {
-			_selected_upgrade = three_random_upgrades[2]
-		}
-		
-		if (_selected_upgrade) {
-			global.p_money -= _price
-			_selected_upgrade.onBuy()
-		}
+var _selected_upgrade = noone
+if (cursor == "left") {
+	_selected_upgrade = three_random_upgrades[0]
+}
+if (cursor == "center") {
+	_selected_upgrade = three_random_upgrades[1]
+}
+if (cursor == "right") {
+	_selected_upgrade = three_random_upgrades[2]
+}
+
+if (_space && cursor != "bottom" && _selected_upgrade) {
+	var _cost = upgrade_cost(_selected_upgrade)
+	if (_cost <= global.p_money) {
+		global.p_money -= _cost
+		_selected_upgrade.onBuy()
 	}
 }
