@@ -53,6 +53,7 @@
     {"id":{"name":"obj_alpha","path":"objects/obj_alpha/obj_alpha.yy",},},
     {"id":{"name":"spr_gun_upgrade","path":"sprites/spr_gun_upgrade/spr_gun_upgrade.yy",},},
     {"id":{"name":"store","path":"rooms/store/store.yy",},},
+    {"id":{"name":"snd_soundtrack1","path":"sounds/snd_soundtrack1/snd_soundtrack1.yy",},},
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
     {"id":{"name":"spr_heal","path":"sprites/spr_heal/spr_heal.yy",},},
     {"id":{"name":"timeline_bogey_charlie","path":"timelines/timeline_bogey_charlie/timeline_bogey_charlie.yy",},},

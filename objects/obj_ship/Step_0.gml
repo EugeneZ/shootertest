@@ -70,7 +70,7 @@ since_last_shot += delta_time / 1000000
 
 if (_space && since_last_shot > _shot_interval) {
 	since_last_shot = 0
-	audio_play_sound(snd_shoot, 0, false, 1, 0, random_range(1,1.1))
+	audio_play_sound(snd_shoot, 0, false, 1, 0, random_range(1,1.2))
 	
 	if (global.p_gun_lvl == 1) {
 		instance_create_layer(
