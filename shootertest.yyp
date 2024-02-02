@@ -41,7 +41,6 @@
     {"id":{"name":"spr_fire_rate","path":"sprites/spr_fire_rate/spr_fire_rate.yy",},},
     {"id":{"name":"obj_wave_generator","path":"objects/obj_wave_generator/obj_wave_generator.yy",},},
     {"id":{"name":"obj_beta","path":"objects/obj_beta/obj_beta.yy",},},
-    {"id":{"name":"timeline_wave_1","path":"timelines/timeline_wave_1/timeline_wave_1.yy",},},
     {"id":{"name":"obj_ship","path":"objects/obj_ship/obj_ship.yy",},},
     {"id":{"name":"spr_cloud2","path":"sprites/spr_cloud2/spr_cloud2.yy",},},
     {"id":{"name":"spr_Water","path":"sprites/spr_Water/spr_Water.yy",},},
