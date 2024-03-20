@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "snd_shoot",
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "ag_sfx",
+    "path": "audiogroups/ag_sfx",
   },
   "bitDepth": 1,
   "bitRate": 128,

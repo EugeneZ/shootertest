@@ -8,6 +8,12 @@ var _left = keyboard_check(ord("A"))
 var _right = keyboard_check(ord("D"))
 var _space = keyboard_check(ord(" "))
 
+
+
+
+
+
+
 if (_up) {
 	v_y -= _accel
 } else if (v_y < 0) {

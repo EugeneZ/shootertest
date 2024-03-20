@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_hit",
+  "name": "snd_jet_engine",
   "audioGroupId": {
     "name": "ag_sfx",
     "path": "audiogroups/ag_sfx",
@@ -17,7 +17,7 @@
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_hit.wav",
+  "soundFile": "snd_jet_engine.wav",
   "type": 0,
   "volume": 1.0,
 }

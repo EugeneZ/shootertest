@@ -4,6 +4,8 @@
   "name": "shootertest",
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
+    {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"ag_music","targets":-1,},
+    {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"ag_sfx","targets":-1,},
   ],
   "configs": {
     "children": [],
@@ -72,10 +74,12 @@
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
     {"id":{"name":"timeline_bogey_alpha","path":"timelines/timeline_bogey_alpha/timeline_bogey_alpha.yy",},},
     {"id":{"name":"Player","path":"scripts/Player/Player.yy",},},
+    {"id":{"name":"obj_music","path":"objects/obj_music/obj_music.yy",},},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
     {"id":{"name":"spr_cloud3","path":"sprites/spr_cloud3/spr_cloud3.yy",},},
     {"id":{"name":"obj_cloud","path":"objects/obj_cloud/obj_cloud.yy",},},
     {"id":{"name":"snd_hit","path":"sounds/snd_hit/snd_hit.yy",},},
+    {"id":{"name":"snd_jet_engine","path":"sounds/snd_jet_engine/snd_jet_engine.yy",},},
     {"id":{"name":"spr_charlie","path":"sprites/spr_charlie/spr_charlie.yy",},},
     {"id":{"name":"obj_debug","path":"objects/obj_debug/obj_debug.yy",},},
     {"id":{"name":"obj_enemy_bullet","path":"objects/obj_enemy_bullet/obj_enemy_bullet.yy",},},
