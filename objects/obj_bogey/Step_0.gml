@@ -22,3 +22,7 @@ if (x == movement_destination.x && y == movement_destination.y) {
 	}
 	array_delete(when_done_moving_cbs, 0, _length)
 }
+
+if (y >= room_height) {
+	instance_destroy(self)
+}
