@@ -51,6 +51,7 @@
     {"id":{"name":"obj_bogey","path":"objects/obj_bogey/obj_bogey.yy",},},
     {"id":{"name":"spr_cloud1","path":"sprites/spr_cloud1/spr_cloud1.yy",},},
     {"id":{"name":"spr_beta","path":"sprites/spr_beta/spr_beta.yy",},},
+    {"id":{"name":"obj_shop","path":"objects/obj_shop/obj_shop.yy",},},
     {"id":{"name":"obj_upgrades","path":"objects/obj_upgrades/obj_upgrades.yy",},},
     {"id":{"name":"obj_alpha","path":"objects/obj_alpha/obj_alpha.yy",},},
     {"id":{"name":"spr_gun_upgrade","path":"sprites/spr_gun_upgrade/spr_gun_upgrade.yy",},},

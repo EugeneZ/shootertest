@@ -28,6 +28,7 @@
     {"name":"snd_death","order":2,"path":"sounds/snd_death/snd_death.yy",},
     {"name":"obj_cloud_generator","order":5,"path":"objects/obj_cloud_generator/obj_cloud_generator.yy",},
     {"name":"spr_beta","order":3,"path":"sprites/spr_beta/spr_beta.yy",},
+    {"name":"obj_shop","order":15,"path":"objects/obj_shop/obj_shop.yy",},
     {"name":"obj_upgrades","order":12,"path":"objects/obj_upgrades/obj_upgrades.yy",},
     {"name":"obj_alpha","order":1,"path":"objects/obj_alpha/obj_alpha.yy",},
     {"name":"spr_gun_upgrade","order":1,"path":"sprites/spr_gun_upgrade/spr_gun_upgrade.yy",},
