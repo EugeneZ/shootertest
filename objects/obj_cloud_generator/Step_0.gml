@@ -1,7 +1,7 @@
 #macro min_time_between_cluster 3
 #macro max_time_between_cluster 15
-#macro min_clouds 5
-#macro max_clouds 25
+#macro min_clouds 1
+#macro max_clouds 5
 #macro y_spread 50
 #macro v_y_min 0.1
 #macro v_y_spread 1
@@ -11,7 +11,7 @@
 // TODO: put in create for perf/maint
 var _clouds = tag_get_asset_ids("cloud", asset_sprite);
 
-time_since_last_cluster += delta_time / 1000000
+time_since_last_cluster += delta_time / 10000
 
 var _should_spawn_cluster = false
 

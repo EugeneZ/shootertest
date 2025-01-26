@@ -1,10 +1,12 @@
 {
-  "resourceType": "GMTimeline",
-  "resourceVersion": "1.0",
-  "name": "timeline_bogey_beta",
-  "momentList": [],
-  "parent": {
-    "name": "Timelines",
-    "path": "folders/Timelines.yy",
+  "$GMTimeline":"",
+  "%Name":"timeline_bogey_beta",
+  "momentList":[],
+  "name":"timeline_bogey_beta",
+  "parent":{
+    "name":"Timelines",
+    "path":"folders/Timelines.yy",
   },
+  "resourceType":"GMTimeline",
+  "resourceVersion":"2.0",
 }
