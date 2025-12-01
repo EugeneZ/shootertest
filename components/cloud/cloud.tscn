@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1k70gcq1wns1"]
+
+[ext_resource type="Script" uid="uid://c5678br6cjntt" path="res://components/cloud/cloud.gd" id="1_yx0hf"]
+
+[node name="Cloud" type="Node2D"]
+z_index = 1
+script = ExtResource("1_yx0hf")

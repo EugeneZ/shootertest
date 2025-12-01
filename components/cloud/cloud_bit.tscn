@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cs6iouoaofevm"]
+
+[ext_resource type="Script" uid="uid://sh71lpdg3gh3" path="res://components/cloud/cloud_bit.gd" id="1_4bi7l"]
+
+[node name="CloudBit" type="Node2D" groups=["cloud_bits"]]
+script = ExtResource("1_4bi7l")

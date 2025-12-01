@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://cv18vylawslug"]
+
+[ext_resource type="Script" uid="uid://di5xwjmgl0lhx" path="res://components/player/player.gd" id="1_kfe3d"]
+[ext_resource type="Texture2D" uid="uid://cutfvceukx06p" path="res://assets/player.png" id="2_ph1f6"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wa6cj"]
+radius = 7.0
+height = 28.0
+
+[node name="Player" type="Area2D"]
+z_index = 5
+script = ExtResource("1_kfe3d")
+speed = 2.0
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_ph1f6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_wa6cj")
+
+[node name="BulletOrigin" type="Marker2D" parent="."]
+position = Vector2(0, -16)
+
+[node name="ReloadTimer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
