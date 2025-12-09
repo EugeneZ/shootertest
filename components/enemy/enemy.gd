@@ -7,6 +7,8 @@ const BulletScene = preload("res://components/bullet/bullet.tscn")
 
 func _process(_delta: float) -> void:
 	position += Vector2.DOWN * speed
+	if position.y > 1000:
+		queue_free()
 
 
 func shoot() -> void:

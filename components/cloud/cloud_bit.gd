@@ -1,8 +1,8 @@
 class_name CloudBit extends Node2D
 
 const MIN_DISTANCE_TO_BE_SUCKED_UP: float = 60.0
-const MAX_RADIUS_PER_SECOND: float = 25.0
-const POWER_PERCENT_PER_RADIUS: float = 0.1
+const MAX_RADIUS_PER_SECOND: float = 15.0
+const POWER_PERCENT_PER_RADIUS: float = 0.05
 
 var player: Player
 var game_state: GameState
@@ -12,9 +12,11 @@ var radius: float
 
 func _ready() -> void:
 	var possible_colors: Array[String] = [
-		"#c8e4ff",
-		"#f8e4ff",
-		"#d8f4ff"
+		"#F2F2F3",
+		"#E6E8E8",
+		"#D4D9DB",
+		"#EAF6FF",
+		"#C9DCEB",
 	]
 	color = Color.from_string(possible_colors.pick_random(), Color.WHITE)
 	update_radius(randf_range(5.0, 20.0))

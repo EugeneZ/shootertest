@@ -20,7 +20,7 @@ func _ready() -> void:
 func spawn_enemy() -> void:
 	var enemy: Enemy = EnemyScene.instantiate()
 	enemy.position.x = randi_range(50, roundi(viewport.x) - 50)
-	enemy.position.y = 0
+	enemy.position.y = -50
 	add_child(enemy)
 
 
@@ -29,7 +29,7 @@ func spawn_cloud() -> void:
 	cloud.game_state = game_state
 	cloud.player = $Player
 	cloud.position.x = randi_range(50, roundi(viewport.x) - 50)
-	cloud.position.y = 0
+	cloud.position.y = randi_range(-480, -1500)
 	add_child(cloud)
 
 
@@ -43,6 +43,7 @@ func game_quit() -> void:
 
 func _on_spawn_timer_timeout() -> void:
 	spawn_enemy()
+	spawn_cloud()
 	spawn_cloud()
 
 

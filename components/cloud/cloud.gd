@@ -17,12 +17,36 @@ func _ready() -> void:
 
 func _process(_delta: float) -> void:
 	position += Vector2.DOWN * speed
+	if position.y > 1000:
+		queue_free()
 
 
 func generate() -> void:
+	rotation = randi_range(0,359)
 	generate_puffball(Vector2.ZERO)
-	generate_puffball(Vector2.LEFT * 25)
-	generate_puffball(Vector2.RIGHT * 25)
+	
+	if randf() < 0.1:
+		return
+	
+	var left_distance := Vector2.LEFT * randi_range(15, 22)
+	generate_puffball(left_distance)
+	if randf() < 0.3:
+		generate_puffball(left_distance + Vector2.LEFT * randi_range(15, 22))
+	
+	if randf() < 0.2:
+		return
+	
+	generate_puffball(Vector2.RIGHT * randi_range(15, 22))
+	
+	if randf() < 0.7:
+		return
+	
+	generate_puffball(Vector2.UP * randi_range(15, 22))
+	
+	if randf() < 0.5:
+		return
+	
+	generate_puffball(Vector2.DOWN * randi_range(15, 22))
 
 
 func add_bit(bit_position: Vector2) -> void:
@@ -37,7 +61,7 @@ func generate_puffball(ball_position: Vector2) -> void:
 	add_bit(ball_position)
 	
 	var orbital_distance := randf_range(5.0, 8.0)
-	var orbital_count := randi_range(3,8)
+	var orbital_count := randi_range(5,12)
 	var orbital_interval := 360.0 / orbital_count
 	
 	var current_orbital_angle := randf_range(0,359)
