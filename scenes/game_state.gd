@@ -8,7 +8,7 @@ func get_power() -> float:
 
 
 func use_power(amount: float) -> void:
-	_adjust_power(-20)
+	_adjust_power(-amount)
 
 
 func absorb_cloud_power(amount: float) -> void:

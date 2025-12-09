@@ -4,9 +4,17 @@ var game_state: GameState
 var has_moved := false
 var has_shot := false
 
+@onready
+var inst_power_bar := $ColorRect
+
+@onready
+var inst_wasd_hint := $SpriteWasdHint
+
+@onready
+var inst_mouse_hint := $SpriteMouseHint
 
 func _ready() -> void:
-	$SpriteWasdHint.modulate = Color(0,0,0,1)
+	inst_wasd_hint.modulate = Color(0,0,0,1)
 
 
 func _process(_delta: float) -> void:
@@ -16,11 +24,11 @@ func _process(_delta: float) -> void:
 
 
 func _process_power_bar() -> void:
-	$ColorRect.scale.x = game_state.get_power() / 100
+	inst_power_bar.scale.x = game_state.get_power() / 100
 
 
 func _process_wasd_hint() -> void:
-	if !is_instance_valid($SpriteWasdHint):
+	if !is_instance_valid(inst_wasd_hint):
 		return
 	
 	if Input.is_action_pressed("move up") \
@@ -31,15 +39,15 @@ func _process_wasd_hint() -> void:
 		has_moved = true
 	
 	if has_moved:
-		var prev_modulate: Color = $SpriteWasdHint.modulate
+		var prev_modulate: Color = inst_wasd_hint.modulate
 		var next_modulate := Color(0,0,0, prev_modulate.a - 0.05)
 		if next_modulate.a <= 0:
-			$SpriteWasdHint.queue_free()
-		$SpriteWasdHint.modulate = next_modulate
+			inst_wasd_hint.queue_free()
+		inst_wasd_hint.modulate = next_modulate
 
 
 func _process_mouse_hint() -> void:
-	if !is_instance_valid($SpriteMouseHint):
+	if !is_instance_valid(inst_mouse_hint):
 		return
 	
 	if Input.is_action_pressed("shoot") \
@@ -48,8 +56,8 @@ func _process_mouse_hint() -> void:
 		has_shot = true
 	
 	if has_shot:
-		var prev_modulate: Color = $SpriteMouseHint.modulate
+		var prev_modulate: Color = inst_mouse_hint.modulate
 		var next_modulate := Color(0,0,0, prev_modulate.a - 0.05)
 		if next_modulate.a <= 0:
-			$SpriteMouseHint.queue_free()
-		$SpriteMouseHint.modulate = next_modulate
+			inst_mouse_hint.queue_free()
+		inst_mouse_hint.modulate = next_modulate
