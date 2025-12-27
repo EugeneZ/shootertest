@@ -19,9 +19,7 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		shoot()
-	if Input.is_action_pressed("shoot"):
-		shoot()
-		
+	
 	var velocity := Vector2.ZERO
 	
 	if Input.is_action_pressed("move up"):
@@ -32,6 +30,10 @@ func _process(_delta: float) -> void:
 		velocity.x -= 1
 	if Input.is_action_pressed("move right"):
 		velocity.x += 1
+	
+	# Avoids ending on a fraction of a pixel, which looks ugly
+	if velocity == Vector2.ZERO:
+		position = position.round()
 	
 	position += velocity.normalized() * speed
 	

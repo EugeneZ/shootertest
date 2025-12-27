@@ -17,6 +17,11 @@ func _ready() -> void:
 	$Player.game_state = game_state
 
 
+func _process(_delta: float) -> void:
+	if Input.is_action_pressed("quit"):
+		game_quit()
+
+
 func spawn_enemy() -> void:
 	var enemy: Enemy = EnemyScene.instantiate()
 	enemy.game_state = game_state
