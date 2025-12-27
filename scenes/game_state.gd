@@ -1,6 +1,7 @@
 class_name GameState extends Node
 
 var _power_percent: float = 100.0
+var _score: int = 0
 
 
 func get_power() -> float:
@@ -13,7 +14,15 @@ func use_power(amount: float) -> void:
 
 func absorb_cloud_power(amount: float) -> void:
 	_adjust_power(amount)
-	
+
+
+func get_score() -> int:
+	return _score
+
+
+func put_score(points: int) -> void:
+	_score += points
+
 
 func _adjust_power(amount: float) -> void:
 	_power_percent += amount

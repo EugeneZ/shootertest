@@ -1,8 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://lklci1igbmsu"]
+[gd_scene load_steps=6 format=3 uid="uid://lklci1igbmsu"]
 
 [ext_resource type="Script" uid="uid://bf2f6x0jak5jh" path="res://components/ui/ui.gd" id="1_ufc7s"]
 [ext_resource type="Texture2D" uid="uid://pwc4r0yt03m1" path="res://assets/wasd_move.png" id="2_voclx"]
 [ext_resource type="Texture2D" uid="uid://bcmhubuvj7v6t" path="res://assets/mouse_aim_shoot.png" id="3_vtyio"]
+[ext_resource type="FontFile" uid="uid://bo2ftp5ojh7nt" path="res://assets/PeaberryMono.ttf" id="4_vtyio"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_j5osi"]
+font = ExtResource("4_vtyio")
+font_color = Color(0, 0, 0, 1)
 
 [node name="Ui" type="CanvasLayer"]
 script = ExtResource("1_ufc7s")
@@ -29,3 +34,10 @@ texture = ExtResource("2_voclx")
 [node name="SpriteMouseHint" type="Sprite2D" parent="."]
 position = Vector2(376, 212)
 texture = ExtResource("3_vtyio")
+
+[node name="Score" type="Label" parent="."]
+offset_top = 454.0
+offset_right = 54.0
+offset_bottom = 477.0
+text = "0"
+label_settings = SubResource("LabelSettings_j5osi")

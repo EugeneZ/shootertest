@@ -13,14 +13,23 @@ var inst_wasd_hint := $SpriteWasdHint
 @onready
 var inst_mouse_hint := $SpriteMouseHint
 
+@onready
+var inst_score: Label = $Score
+
+
 func _ready() -> void:
 	inst_wasd_hint.modulate = Color(0,0,0,1)
 
 
 func _process(_delta: float) -> void:
+	_process_score()
 	_process_power_bar()
 	_process_wasd_hint()
 	_process_mouse_hint()
+
+
+func _process_score() -> void:
+	inst_score.text = String.num_int64(game_state.get_score())
 
 
 func _process_power_bar() -> void:

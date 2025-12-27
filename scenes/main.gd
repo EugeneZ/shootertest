@@ -19,6 +19,7 @@ func _ready() -> void:
 
 func spawn_enemy() -> void:
 	var enemy: Enemy = EnemyScene.instantiate()
+	enemy.game_state = game_state
 	enemy.position.x = randi_range(50, roundi(viewport.x) - 50)
 	enemy.position.y = -50
 	add_child(enemy)

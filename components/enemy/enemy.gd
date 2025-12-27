@@ -16,6 +16,8 @@ var inst_shoot_timer := $ShootTimer
 @onready
 var inst_move_timer := $MoveTimer
 
+var game_state: GameState
+
 # Enabled once it fully enters screen for the first time
 # Then it can move/shoot
 var enabled := false
@@ -73,6 +75,7 @@ func start_banking() -> void:
 
 
 func die() -> void:
+	game_state.put_score(1)
 	queue_free()
 
 
