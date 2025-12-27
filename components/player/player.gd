@@ -32,10 +32,17 @@ func _process(_delta: float) -> void:
 		velocity.x += 1
 	
 	# Avoids ending on a fraction of a pixel, which looks ugly
+	var is_zero_velocity := false
 	if velocity == Vector2.ZERO:
+		is_zero_velocity = true
 		position = position.round()
 	
-	position += velocity.normalized() * speed
+	var is_dashing := false
+	if !is_zero_velocity and Input.is_action_just_pressed("dash") and game_state.get_power() > 10:
+		game_state.use_power(10)
+		is_dashing = true
+	
+	position += velocity.normalized() * speed * (20 if is_dashing else 1)
 	
 	position = position.clamp(Vector2.ZERO, viewport)
 

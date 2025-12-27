@@ -3,6 +3,7 @@ class_name Ui extends CanvasLayer
 var game_state: GameState
 var has_moved := false
 var has_shot := false
+var has_dashed := false
 
 @onready
 var inst_power_bar := $ColorRect
@@ -14,11 +15,16 @@ var inst_wasd_hint := $SpriteWasdHint
 var inst_mouse_hint := $SpriteMouseHint
 
 @onready
+var inst_dash_hint := $SpriteDashHint
+
+@onready
 var inst_score: Label = $Score
 
 
 func _ready() -> void:
 	inst_wasd_hint.modulate = Color(0,0,0,1)
+	inst_dash_hint.modulate = Color(0,0,0,0)
+	inst_mouse_hint.modulate = Color(0,0,0,1)
 
 
 func _process(_delta: float) -> void:
@@ -26,6 +32,7 @@ func _process(_delta: float) -> void:
 	_process_power_bar()
 	_process_wasd_hint()
 	_process_mouse_hint()
+	_process_dash_hint()
 
 
 func _process_score() -> void:
@@ -59,9 +66,7 @@ func _process_mouse_hint() -> void:
 	if !is_instance_valid(inst_mouse_hint):
 		return
 	
-	if Input.is_action_pressed("shoot") \
-	|| Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) \
-	:
+	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		has_shot = true
 	
 	if has_shot:
@@ -70,3 +75,24 @@ func _process_mouse_hint() -> void:
 		if next_modulate.a <= 0:
 			inst_mouse_hint.queue_free()
 		inst_mouse_hint.modulate = next_modulate
+
+
+func _process_dash_hint() -> void:
+	if !is_instance_valid(inst_dash_hint):
+		return
+	
+	if !is_instance_valid(inst_wasd_hint) and !has_dashed:
+		var prev_modulate: Color = inst_dash_hint.modulate
+		var next_modulate := Color(0,0,0, prev_modulate.a + 0.05)
+		if next_modulate.a < 1:
+			inst_dash_hint.modulate = next_modulate
+	
+	if Input.is_action_pressed("dash"):
+		has_dashed = true
+	
+	if has_dashed:
+		var prev_modulate: Color = inst_dash_hint.modulate
+		var next_modulate := Color(0,0,0, prev_modulate.a - 0.05)
+		if next_modulate.a <= 0:
+			inst_dash_hint.queue_free()
+		inst_dash_hint.modulate = next_modulate
